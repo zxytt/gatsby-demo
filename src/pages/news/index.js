@@ -11,9 +11,6 @@ const News = () => {
         id
         name
         type
-        pic {
-          id
-        }
       }
     }
   }`)
@@ -24,11 +21,11 @@ const News = () => {
         directus.cars.map(car => (
           <div key={car.id} className="car-item">
             <span>{car.name}</span>
-            <img
+            {/* <img
               className="car-pic"
               src={'//directus-t.itcast.cn/assets/' + car.pic.id}
               alt=""
-            />
+            /> */}
           </div>
         ))
       }
