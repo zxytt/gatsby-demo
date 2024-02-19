@@ -14,7 +14,6 @@ const News = () => {
       }
     }
   }`)
-  console.log('directus', directus);
   return (
     <Layout>
       {
@@ -34,11 +33,11 @@ const News = () => {
 }
 export default News
 
-// export async function config() {
-//   return ({ params }) => {
-//     return {
-//       defer: true
-//     }
-//   }
-// }
+export async function config() {
+  return ({ params }) => {
+    return {
+      defer: true
+    }
+  }
+}
 
