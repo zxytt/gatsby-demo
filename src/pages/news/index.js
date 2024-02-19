@@ -7,19 +7,20 @@ import Layout from "@components/layout"
 const News = () => {
   const { directus } = useStaticQuery(graphql`{
     directus {
-      cars {
+      news {
         id
-        name
-        type
+        title
+        content
       }
     }
   }`)
   return (
     <Layout>
       {
-        directus.cars.map(car => (
+        directus.news.map(car => (
           <div key={car.id} className="car-item">
-            <span>{car.name}</span>
+            <h3>{car.title}</h3>
+            <p>{car.content}</p>
             {/* <img
               className="car-pic"
               src={'//directus-t.itcast.cn/assets/' + car.pic.id}

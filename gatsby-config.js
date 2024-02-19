@@ -45,7 +45,7 @@ module.exports = {
       resolve: `@directus/gatsby-source-directus`,
       options: {
         // url: `https://directus-t.itcast.cn`
-        url: `http://localhost:8055`
+        url: `http://0.0.0.0:8055`
       }
     },
     {
