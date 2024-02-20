@@ -4,34 +4,39 @@ import "./index.css"
 
 import Layout from "@components/layout"
 
-const News = () => {
-  const { directus } = useStaticQuery(graphql`{
-    directus {
-      news {
-        id
-        title
-        content
-      }
-    }
-  }`)
-  return (
-    <Layout>
-      {
-        directus.news.map(car => (
-          <div key={car.id} className="car-item">
-            <h3>{car.id}.{car.title}</h3>
-            <p>{car.content}</p>
-            {/* <img
-              className="car-pic"
-              src={'//directus-t.itcast.cn/assets/' + car.pic.id}
-              alt=""
-            /> */}
-          </div>
-        ))
-      }
-    </Layout> 
-  )
-}
+const News = () => (
+  <Layout>
+    <div>news</div>
+  </Layout>
+)
+// const News = () => {
+//   const { directus } = useStaticQuery(graphql`{
+//     directus {
+//       news {
+//         id
+//         title
+//         content
+//       }
+//     }
+//   }`)
+//   return (
+//     <Layout>
+//       {
+//         directus.news.map(car => (
+//           <div key={car.id} className="car-item">
+//             <h3>{car.id}.{car.title}</h3>
+//             <p>{car.content}</p>
+//             {/* <img
+//               className="car-pic"
+//               src={'//directus-t.itcast.cn/assets/' + car.pic.id}
+//               alt=""
+//             /> */}
+//           </div>
+//         ))
+//       }
+//     </Layout> 
+//   )
+// }
 export default News
 
 export async function config() {
