@@ -41,13 +41,13 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // {
-    //   resolve: `@directus/gatsby-source-directus`,
-    //   options: {
-    //     // url: `https://directus-t.itcast.cn`
-    //     url: `http://39.101.67.62:8055`,
-    //   }
-    // },
+    {
+      resolve: `@directus/gatsby-source-directus`,
+      options: {
+        // url: `https://directus-t.itcast.cn`
+        url: `http://39.101.67.62:8055`,
+      }
+    },
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
