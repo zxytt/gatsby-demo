@@ -19,7 +19,7 @@ const News = () => {
       {
         directus.news.map(car => (
           <div key={car.id} className="car-item">
-            <h3>{car.title}</h3>
+            <h3>{car.id}.{car.title}</h3>
             <p>{car.content}</p>
             {/* <img
               className="car-pic"
