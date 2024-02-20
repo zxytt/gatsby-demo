@@ -45,7 +45,11 @@ module.exports = {
       resolve: `@directus/gatsby-source-directus`,
       options: {
         // url: `https://directus-t.itcast.cn`
-        url: `http://39.101.67.62:8055`
+        url: `http://39.101.67.62:8055`,
+        auth: {
+          email: "admin@test.com",
+          password: "1234"
+        }
       }
     },
     {
