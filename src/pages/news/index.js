@@ -37,7 +37,7 @@ export default News
 export async function config() {
   return ({ params }) => {
     return {
-      defer: true
+      defer: false
     }
   }
 }
